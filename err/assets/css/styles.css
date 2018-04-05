@@ -1,0 +1,175 @@
+body {
+	margin:0;
+}
+
+.wrapper {
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background:#FFE088;
+	overflow-x:hidden;
+}
+
+.about {
+	left:10em;
+	top:15em;
+	width:62vw;
+	position:absolute;
+}
+
+.err {
+	left:10em;
+	top:12.5em;
+	width:50vw;
+	position:absolute;
+}
+
+.homekit{
+	top:70%;
+	left:8%;
+	width:12vw;
+	height:36vh;
+	margin-top:1%;
+	margin-bottom:2%;
+	position:absolute;
+	display:block;
+	background:url(../img/homekit.png) no-repeat center;
+	background-size:contain;
+	transition: all 0.75s ease-in-out;
+}
+
+.homekit:hover{
+	transform:scale(1.1);
+	transition: all 0.75s ease-in-out;
+}
+
+.ui1{
+	top:70%;
+	left:21%;
+	width:12vw;
+	height:36vh;
+	margin-top:1%;
+	margin-bottom:2%;
+	position:absolute;
+	display:block;
+	background:url(../img/ui1.png) no-repeat center;
+	background-size:contain;
+	transition: all 0.75s ease-in-out;
+}
+
+.ui1:hover{
+	transform:scale(1.1);
+	transition: all 0.75s ease-in-out;
+}
+
+.ui2{
+	top:70%;
+	left:34%;
+	width:12vw;
+	height:36vh;
+	margin-top:1%;
+	margin-bottom:2%;
+	position:absolute;
+	display:block;
+	background:url(../img/ui2.png) no-repeat center;
+	background-size:contain;
+	transition: all 0.75s ease-in-out;
+}
+
+.ui2:hover{
+	transform:scale(1.1);
+	transition: all 0.75s ease-in-out;
+}
+
+.kits{
+	top:70%;
+	left:42%;
+	width:30vw;
+	height:25vh;
+	margin-top:1%;
+	margin-bottom:2%;
+	position:absolute;
+	display:block;
+	background:url(../img/kits.png) no-repeat center;
+	background-size:contain;
+	transition: all 0.75s ease-in-out;
+}
+
+.kits:hover{
+	transform:scale(1.1);
+	transition: all 0.75s ease-in-out;
+}
+
+.crest{
+	top:70%;
+	left:61.5%;
+	width:30vw;
+	height:25vh;
+	margin-top:1%;
+	margin-bottom:2%;
+	position:absolute;
+	display:block;
+	background:url(../img/err.png) no-repeat center;
+	background-size:contain;
+	transition: all 0.75s ease-in-out;
+}
+
+
+.crest:hover{
+	transform:scale(1.1);
+	transition: all 0.75s ease-in-out;
+}
+
+
+p {
+	font-family:arial;
+	font-size:2em;
+	color:#0D0D0D;
+	letter-spacing:5px;
+
+}
+
+h1 {
+	background:none;
+	font-family: arial;
+	font-weight: bold;
+	font-size:5em;
+	letter-spacing: 3px;
+	left:2em;
+	top: 0.5em;
+	position:absolute;
+	color: black;
+	transition: all 0.75s ease-in-out;
+}
+
+h1:hover {
+
+	background:black;
+	color:white;
+	transition: all 0.75s ease-in-out;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+
+li {
+	list-style-type: none;
+	left:3em;
+	top:4.5em;
+	margin-top:1.2em;
+	margin-bottom:1.2em;
+	font-family: arial ;
+	letter-spacing: 0.15em;
+	font-size:2.75em;
+	position:relative;
+	color:black;
+	transition: all 0.75s ease-in-out;
+}
+
+li:hover {
+	color:#656565;
+	transition: all 0.75s ease-in-out;
+}
