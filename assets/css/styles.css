@@ -1,89 +1,278 @@
-body {
-	margin:0;
-}
-
-.wrapper {
-	width:100vw;
-	height:100vh;
-	position:absolute;
-	background:#FFE088;
-	overflow-x:hidden;
-}
-
-.about {
-	left:10em;
-	top:15em;
-	width:62vw;
-	position:absolute;
-}
-
-
-.ui1{
-	top:35em;
-	right:10em;
-	width:18vw;
-	height:55vh;
-	position:absolute;
-	display:block;
-	background:url(../img/ui1.png) no-repeat center;
-	background-size:contain;
-	transition: all 0.75s ease-in-out;
-}
-
-.ui1:hover{
-	transform:scale(1.5);
-	transition: all 0.75s ease-in-out;
-}
-
-p {
+body, div {
 	font-family:arial;
-	font-size:2em;
-	color:#0D0D0D;
-	letter-spacing:5px;
+	letter-spacing: 5%;
+	background:#FAFAFA;
+}
 
+.overlay{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0%);
+	position:absolute;
+	transition: all 0.55s ease-in-out;
+}
+
+.err{
+	width:14.5%;
+	height:28%;
+	top:30%;
+	left:10%;
+	background:url(../img/erricon.png) center no-repeat;
+	background-size: 90% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.err:hover{
+	background-size: 100% ;
+	transition: all 0.35s ease-in-out;
+}
+
+.err:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.err:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+
+.donbass{
+	width:14.5%;
+	height:28%;
+	top:30%;
+	left:29.5%;
+	background:url(../img/donbasscover.png) center no-repeat;
+	background-size: 140% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.donbass:hover{
+	background-size: 150% ;
+	transition: all 0.35s ease-in-out;
+}
+
+.donbass:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.donbass:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.album{
+	width:14.5%;
+	height:28%;
+	top:30%;
+	left:49%;
+	background:url(../img/japan.svg) center no-repeat;
+	background-size: 170% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.album:hover{
+	background-size: 180% ;
+	transition: all 0.35s ease-in-out;
+}
+
+.album:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.album:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.art{
+	width:14.5%;
+	height:28%;
+	top:30%;
+	left:68.5%;
+	background:url(../img/bigwengz.png) center no-repeat;
+	background-size: 140% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.art:hover {
+	background-size:150%;
+	transition: all 0.35s ease-in-out;
+}
+
+.art:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.art:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.photos{
+	width:14.5%;
+	height:28%;
+	top:63%;
+	left:10%;
+	background:url(../img/pink.jpg) center no-repeat;
+	background-size: 155% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.photos:hover {
+	background-size:160%;
+	transition: all 0.35s ease-in-out;
+
+}
+
+.photos:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.photos:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.films{
+	width:14.5%;
+	height:28%;
+	top:63%;
+	left:29.5%;
+	background:url(../img/titlecard.png) center no-repeat;
+	background-size: 140% ;
+	position:absolute;
+	transition: all 0.35s ease-in-out;
+}
+
+.films:hover {
+	background-size:150%;
+	transition: all 0.35s ease-in-out;
+
+}
+
+.films:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.films:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.about{
+	width:14.5%;
+	height:28%;
+	top:63%;
+	left:49%;
+	background: black;
+	position: absolute;
+}
+
+.about:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.about:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
+}
+
+.resume{
+	width:14.5%;
+	height:28%;
+	top:63%;
+	left:68.5%;
+	background: white;
+	position: absolute;
+}
+
+.resume:hover > .overlay{
+	background: rgba(0,0,0,40%);
+	transition: all 0.35s ease-in-out;
+}
+
+.resume:hover > h2{
+	top: 32%;
+	transform: translateY(-32%);
+	-webkit-transform: translateY(-32%);
+	-ms-transform: translateY(-32%);
+	top: 32%;
+	opacity:1;
+	transition: all 0.35s ease-in-out;
 }
 
 h1 {
-	background:none;
-	font-family: arial;
-	font-weight: bold;
 	font-size:5em;
-	letter-spacing: 3px;
-	left:2em;
-	top: 0.5em;
 	position:absolute;
-	color: black;
-	transition: all 0.75s ease-in-out;
+	top:5.5%;
+	left:10%;
+	color:#000AFA;
+	transition: all 0.35s ease-in-out;
 }
 
 h1:hover {
-
-	background:black;
-	color:white;
-	transition: all 0.75s ease-in-out;
-
+	color:#00FA0A;
+	transition: all 0.15s ease-in-out;
 }
 
-a {
-	text-decoration: none;
-}
+h2 {
+	font-size:2em;
+	color: white;
+	opacity:0;
+	width:100%;
+	text-align:center;
+	transition: all 0.55s ease-in-out;
+	position: relative;
+	top: 38%;
+	transform: translateY(-38%);
+	-webkit-transform: translateY(-38%);
+	-ms-transform: translateY(-38%);
 
-
-li {
-	list-style-type: none;
-	left:3em;
-	top:4.5em;
-	margin-top:1.2em;
-	margin-bottom:1.2em;
-	font-family: arial ;
-	letter-spacing: 0.15em;
-	font-size:2.75em;
-	position:relative;
-	color:black;
-	transition: all 0.75s ease-in-out;
-}
-
-li:hover {
-	color:#656565;
-	transition: all 0.75s ease-in-out;
 }
