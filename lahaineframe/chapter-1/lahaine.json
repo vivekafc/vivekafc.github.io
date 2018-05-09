@@ -1,0 +1,114 @@
+{
+	"chapter1": [
+		{
+			"title" : "01. Skyscraper",
+			"description" : "'Heard about the guy who fell off a skyscraper? On his way down past each floor, he kept saying to reassure himself - so far, so good. How you fall doesn't matter, it's how you land.'",
+			"image" : ["0.jpg"]
+		},
+		
+		{
+			"title" : "02. Abdel",
+			"description" : "Abdel Ichaha, has been brutalized by the police shortly before the riot and lies in a coma.",
+			"image" : ["02.jpg"]
+		},
+		
+		{
+			"title" : "03. Saïd",
+			"description" : "Saïd is an Arab Maghrebi who inhabits the middle ground between his two friends' responses to their place in life.",
+			"image" : ["03.jpg"]
+		},
+
+		{
+			"title" : "04. Baise La Police",
+			"description" : "'Fuck The State'",
+			"image" : ["04.jpg"]
+		},
+
+		{
+			"title" : "05. Vinz",
+			"description" : "The introduction of Vinz, the Jewish frontman of the movie.",
+			"image" : ["05.jpg"]
+		},
+
+		{
+			"title" : "06. Reflections",
+			"description" : "The first time we get a glimpse at Vinz, he stares at himself in the mirror and re-enacts the famous scene from Taxi Driver",
+			"image" : ["06.jpg"]
+		},
+
+		{
+			"title" : "07. Talkin' To Me?",
+			"description" : "We get insight into Vinz's inner aggression and rebellious thought process, an important facet of the film.",
+			"image" : ["07.jpg"]
+		},
+
+		{
+			"title" : "08. Hubert",
+			"description" : "Hubert, an African-American, is introduced to us in his burned down boxing arena",
+			"image" : ["08.jpg"]
+		},
+
+		{
+			"title" : "09. Reason",
+			"description" : "Hubert is shown as the voice of reason as Vinz reveals he plans to kill a policeman with a gun he received during the riots.",
+			"image" : ["09.jpg"]
+		},
+
+		{
+			"title" : "10. Aim",
+			"description" : "Vinz remains aggressive in his efforts to seek vengeance for Abdel.",
+			"image" : ["10.jpg"]
+		}
+
+	],
+
+	"chapter2": [
+		{
+			"title" : "11. 'fuck your mother'",
+			"description" : "'Heard about the guy who fell off a skyscraper? On his way down past each floor, he kept saying to reassure himself - so far, so good. How you fall doesn't matter, it's how you land.'",
+			"image" : ["0.jpg"]
+		},
+		
+		{
+			"title" : "12. Abdel",
+			"description" : "Abdel Ichaha, has been brutalized by the police shortly before the riot and lies in a coma.",
+			"image" : ["02.jpg"]
+		},
+		
+		{
+			"title" : "13. Saïd",
+			"description" : "Saïd is an Arab Maghrebi who inhabits the middle ground between his two friends' responses to their place in life.",
+			"image" : ["03.jpg"]
+		},
+
+		{
+			"title" : "14. Baise La Police",
+			"description" : "'Fuck The State'",
+			"image" : ["04.jpg"]
+		},
+
+		{
+			"title" : "15. Vinz",
+			"description" : "The introduction of Vinz, the Jewish frontman of the movie.",
+			"image" : ["05.jpg"]
+		},
+
+		{
+			"title" : "16. Reflections",
+			"description" : "The first time we get a glimpse at Vinz, he stares at himself in the mirror and re-enacts the famous scene from Taxi Driver",
+			"image" : ["06.jpg"]
+		},
+
+		{
+			"title" : "17. Talkin' To Me?",
+			"description" : "We get insight into Vinz's inner aggression and rebellious thought process, an important facet of the film.",
+			"image" : ["07.jpg"]
+		},
+
+		{
+			"title" : "18. Hubert",
+			"description" : "Hubert, an African-American, is introduced to us in his burned down boxing arena",
+			"image" : ["08.jpg"]
+		}
+	]
+}

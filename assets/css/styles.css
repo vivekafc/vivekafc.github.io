@@ -1,4 +1,64 @@
 body, div {
+	margin:0;
+	font-family:helvetica;
+	letter-spacing: 5%;
+	background:#000AFA;
+	margin-right:20%;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+h1 {
+	
+	font-size:3.5em;
+	position:relative;
+	margin-top:6.5%;
+	left:10%;
+	color:#FAFAFA;
+	text-decoration: none;
+	transition: all 0.35s ease-in-out;
+}
+
+h1:hover {
+	color:#00FA0A;
+	transition: all 0.15s ease-in-out;
+}
+
+h2 {
+	color:#FAFAFA;
+	position:relative;
+	font-size:1.85em;
+	font-weight: 1;
+	letter-spacing: 5%;
+	margin-top: 0.65%;
+	left:10.5%;
+	transition: all 0.15s ease-in-out;
+}
+
+h2:hover {
+	color:#00FA0A;
+	transition: all 0.15s ease-in-out;
+}
+
+
+
+h2 > em {
+	font-size:0.78em;
+	color:#FAFAFA;
+}
+
+
+
+/*
+
+-––––––––––––––––––––––––––––––––––––––––––––––––––––––––OLD––––––––––––––––––––––––––
+
+
+
+body, div {
 	font-family:arial;
 	letter-spacing: 5%;
 	background:#FAFAFA;
@@ -276,3 +336,4 @@ h2 {
 	-ms-transform: translateY(-38%);
 
 }
+*/

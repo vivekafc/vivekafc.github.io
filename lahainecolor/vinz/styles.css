@@ -1,0 +1,17 @@
+* { 
+vertical-align: top;
+box-sizing: border-box; }
+
+body {
+	margin:0;
+	background: black;
+}
+
+#app {
+	margin-left: 13%;
+	width:75%;
+}
+
+img {
+	width:100%;
+}
