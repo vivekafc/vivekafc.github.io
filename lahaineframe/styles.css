@@ -33,9 +33,10 @@ h2 {
 	font-weight:1;
 	color: #f6f6f6;
 	font-size:1em;
-	margin-left:12%;
+	margin-left:16%;
 	margin-top:0.75%;
-	letter-spacing: 1em;
+	letter-spacing: 0.7em;
+	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -52,7 +53,8 @@ h3{
 	font-size:1em;
 	margin-left:2%;
 	margin-top:0.75%;
-	letter-spacing: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.7em;
 	transition: all 0.5s ease-in-out;
 }
 
