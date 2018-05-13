@@ -17,11 +17,11 @@ body {
 }
 
 .arash {
-	width: 80%;
-	height:80%;
+	width: 30%;
+	height:30%;
 	margin-top: 5%;
 	margin-left:12.5%;
-	position:relative;
+	position:absolute;
 	background:url(img/tamere2.svg) center no-repeat;
 	background-size:60%;
 }
@@ -29,6 +29,36 @@ body {
 .arash:hover {
 	background:url(img/tamere.svg) center no-repeat;
 	background-size:60%;
+}
+
+.lapolice {
+	width: 30%;
+	height:30%;
+	margin-top: 19%;
+	margin-left:45.5%;
+	position:absolute;
+	background:url(img/lapolice.svg) center no-repeat;
+	background-size:80%;
+}
+
+.lapolice:hover {
+	background:url(img/lapolice2.svg) center no-repeat;
+	background-size:80%;
+}
+
+.lemonde {
+	margin-top: 30%;
+	margin-left: 20%;
+	width: 50%;
+	height:30%;
+	position:absolute;
+	background:url(img/lemonde.svg) center no-repeat;
+	background-size:80%;
+}
+
+.lemonde:hover {
+	background:url(img/lemonde2.svg) center no-repeat;
+	background-size:80%;
 }
 
 
@@ -45,7 +75,21 @@ body {
 
 
 	.arash {
-		margin-top: 2.5%;
+		margin-top: 10.5%;
+		margin-left: 8.5%;
+		width:90%;
+	}
+
+	.lapolice {
+		margin-top: 80%;
+		margin-left: 10.5%;
+		width:90%;
+	}
+
+	.lemonde {
+		margin-left: 8%;
+		margin-top: 140%;
+		width: 90%;
 	}
 
 }
