@@ -37,8 +37,15 @@ body {
 	
 
 	.wrapper{
+		margin-top: -5%;
+		height:110%;
 		background: url(img/banlieuesmobile.svg) no-repeat;
-		background-size:cover;
+		background-size: 500% ;
+	}
+
+
+	.arash {
+		margin-top: 2.5%;
 	}
 
 }
