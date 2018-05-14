@@ -15,7 +15,7 @@ img {
 }
 
 .wrapper {
-  transition: background .2s ease;
+  transition: background 2s ease;
 }
 .section {
   height: 100vh;
@@ -37,4 +37,19 @@ img {
   a {
     color: inherit;
   }
+}
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 4s;
+    animation: animat_show 4s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
 }
