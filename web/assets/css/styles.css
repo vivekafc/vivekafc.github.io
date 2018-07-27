@@ -64,12 +64,6 @@ h2:hover {
 h2 > em {
 	font-size:0.68em;
 	color:#2f3640;
-	opacity:0;
-	transition: all 0.15s ease-in-out;
-}
-
-h2:hover > em {
-	opacity:1;
 	transition: all 0.15s ease-in-out;
 }
 
