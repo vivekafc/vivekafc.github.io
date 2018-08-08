@@ -5,7 +5,8 @@ box-sizing: border-box; }
 body {
   margin:0;
   font-size: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Helvetica', sans-serif;
+  font-weight:bold;
   color: $clouds;
   background: $dark;
 }
@@ -17,6 +18,39 @@ img {
 .wrapper {
   transition: background 2s ease;
 }
+
+.home{
+  letter-spacing: 3px;
+  width:30%;
+  height:30%;
+  margin-top:2.5%;
+  left: 45%;
+  position:fixed;
+}
+
+.said{
+  letter-spacing: 3px;
+  width:30%;
+  height:30%;
+  margin-top:2.5%;
+  left: 20%;
+  position: fixed;
+}
+
+.hub{
+  letter-spacing: 3px;
+  width:30%;
+  height:30%;
+  margin-top:2.5%;
+  left: 70%;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
 .section {
   height: 100vh;
   display: flex;
