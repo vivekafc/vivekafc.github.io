@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body {
+	color:black;
+	font-family: roboto;
+	font-weight: 1;
+	margin:none;
+	min-height: 100%;
+}
+
+
+
+.wrapper2{
+	margin-top:4%;
+	display:block;
+	width:80%;
+	height:90%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom:10%;
+	background: red url(../img/bg.png) center;
+	position: absolute;
+}
+
+p {
+	font-size:1.6em;
+	margin-left:10%;
+	margin-top:53.5%;
+	margin-right:10%;
+	width:80%;
+	display:block;
+	position:absolute;
+}
+
+h2{
+	font-size:1.6em;
+	margin-left:10%;
+	margin-top:119.5%;
+	font-weight: lighter;
+	margin-right:10%;
+	width:80%;
+	display:block;
+	position:absolute;
+}
+
+h3{
+	font-size:1.6em;
+	margin-left:10%;
+	margin-top:189.5%;
+	font-weight: lighter;
+	margin-right:10%;
+	width:80%;
+	display:block;
+	position:absolute;
+}
+
+h4{
+	font-size:1.6em;
+	margin-left:10%;
+	margin-top:260%;
+	font-weight: lighter;
+	margin-right:10%;
+	width:80%;
+	display:block;
+	position:absolute;
+}
+
+h5{
+	color:black;
+	font-size:1em;
+	margin-top:25%;
+	text-decoration: none;
+	position:fixed;
+	transform:rotate(-90deg);
+	transition: all 0.75s ease-in-out;
+}
+
+h5:hover{
+	color:grey;
+	transition: all 0.75s ease-in-out;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper3{
+	margin-top:70%;
+	display:block;
+	width:80%;
+	height:90%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom:10%;
+	background: red url(../img/patterns.png) center;
+	position: absolute;
+}
+
+.wrapper4{
+	margin-top:140%;
+	display:block;
+	width:80%;
+	height:90%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom:10%;
+	background: red url(../img/kits.png) center;
+	background-size:contain;
+	position: absolute;
+}
+
+.wrapper5{
+	margin-top:210%;
+	display:block;
+	width:80%;
+	height:90%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom:10%;
+	background:  url(../img/ui.png) no-repeat center;
+	background-size:cover;
+	position: absolute;
+}
