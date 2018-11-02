@@ -1,0 +1,329 @@
+
+
+body {
+	background:black;
+	font-family: helvetica;
+	font-weight: 1;
+	margin:none;
+}
+
+
+
+.wrapper{
+	display:block;
+	width:100vw;
+	height:100vh;
+	margin:0;
+	overflow:none;
+	background:url(../img/nyc.png) no-repeat;
+	background-size:cover;
+	position:absolute;
+	color:white;
+}
+
+.about{
+	margin-top:100vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background:black;
+	display:flex;
+	align-items: center;
+
+}
+
+.divide{
+	margin-top:200vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background:red;
+	display:flex;
+	align-items: center;
+
+}
+
+.acc{
+	margin-top:300vh;
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	background:red;
+	display:flex;
+	align-items: center;
+
+}
+
+.sol{
+	margin-top:360vh;
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	background:red;
+	display:flex;
+	align-items: center;
+
+}
+
+.cfo{
+	margin-top:420vh;
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	background:red;
+	display:flex;
+	align-items: center;
+
+}
+
+.cap{
+	margin-top:480vh;
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	background:red;
+	display:flex;
+	align-items: center;
+
+}
+
+.contact{
+	margin-top:540vh;
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	background:black;
+	display:flex;
+	align-items: center;
+
+}
+
+.contact > h2{
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration: underline;
+}
+
+.contact > a {
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+}
+
+
+
+.left{
+	width:50vw;
+	height:100vh;
+	left:0;
+	position:absolute;
+	background:gray;
+	display:flex;
+	align-items:center;
+}
+
+.right{
+	width:50vw;
+	height:100vh;
+	right:0;
+	position:absolute;
+	background:black;
+	display:flex;
+	align-items:center;
+}
+
+
+.left1{
+	width:50vw;
+	height:60vh;
+	left:0;
+	position:absolute;
+	background:url(../img/acc.png) no-repeat;
+	background-size: cover;
+	display:flex;
+	align-items:center;
+}
+
+.right1{
+	width:50vw;
+	height:60vh;
+	right:0;
+	position:absolute;
+	display:flex;
+	background:black;
+	align-items:center;
+}
+
+
+.right1 > h2 {
+	margin-left:-2em;
+	margin-bottom:3em;
+	position:relative;
+}
+
+.right1 > p{
+	margin-top:5em;
+	margin-left:-15em;
+	margin-right:15em;
+}
+
+.left2{
+	width:50vw;
+	height:60vh;
+	left:0;
+	position:absolute;
+	display:flex;
+	background:black;
+	align-items:center;
+}
+
+.right2{
+	width:50vw;
+	height:60vh;
+	right:0;
+	position:absolute;
+	background:url(../img/hand.png) no-repeat;
+	background-size: cover;
+	display:flex;
+	align-items:center;
+}
+
+.left2 > h2 {
+	margin-left:8em;
+	margin-bottom:3em;
+	position:relative;
+}
+
+.left2 > p {
+	width:70%;
+	margin-top:12.5em;
+	margin-left: -65em;
+	margin-right:2em;
+}
+
+.left3{
+	width:50vw;
+	height:60vh;
+	left:0;
+	position:absolute;
+	background:url(../img/cfo.png) no-repeat;
+	background-size: cover;
+	display:flex;
+	align-items:center;
+}
+
+.right3{
+	width:50vw;
+	height:60vh;
+	right:0;
+	position:absolute;
+	display:flex;
+	background:black;
+	align-items:center;
+}
+
+.right3 > h2 {
+	margin-left:-1em;
+	margin-bottom:5em;
+	position:relative;
+}
+
+.right3 > p{
+	width:70%;
+	margin-top:4em;
+	margin-left:-15em;
+	margin-right:15em;
+}
+
+.left4{
+	width:50vw;
+	height:60vh;
+	left:0;
+	position:absolute;
+	display:flex;
+	background:black;
+	align-items:center;
+}
+
+.right4{
+	width:50vw;
+	height:60vh;
+	right:0;
+	position:absolute;
+	background:url(../img/capital.png) no-repeat;
+	background-size: cover;
+	display:flex;
+	align-items:center;
+}
+
+.left4 > h2 {
+	margin-left:8em;
+	margin-bottom:3em;
+	position:relative;
+}
+
+.left4 > p {
+	width:70%;
+	margin-top:12.5em;
+	margin-left: -65em;
+	margin-right:2em;
+}
+
+p{
+	display: block;
+	font-size:1em;
+	width:90%;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+h1{
+	display: block;
+	color:white;
+	width:60%;
+	text-align:center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+h2{
+	font-size:5em;
+	display:block;
+	color:white;
+}
+
+img.logo {
+	display:block;
+	width:15%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align: middle;
+}
+
+img.arrow{
+	display:block;
+	width:1.5%;
+	margin-top:12%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h3{
+	font-family:helvetica-bold;
+	font-size:2em;
+	color:white;
+	font-weight: 2;
+	letter-spacing:2px;
+}
+
+h3 {
+	margin: 0;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
