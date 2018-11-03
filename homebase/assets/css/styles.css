@@ -9,6 +9,8 @@ body {
 
 
 
+
+
 .wrapper{
 	display:block;
 	width:100vw;
@@ -16,6 +18,7 @@ body {
 	margin:0;
 	overflow:none;
 	background:url(../img/nyc.png) no-repeat;
+	background-color:black;
 	background-size:cover;
 	position:absolute;
 	color:white;
@@ -32,12 +35,28 @@ body {
 
 }
 
+.nav{
+	width:100vw;
+	height:10vh;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+	opacity:1;
+}
+
+.header{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .divide{
 	margin-top:200vh;
 	width:100vw;
 	height:100vh;
 	position:absolute;
-	background:red;
+	background:black;
 	display:flex;
 	align-items: center;
 
@@ -48,7 +67,7 @@ body {
 	width:100vw;
 	height:60vh;
 	position:absolute;
-	background:red;
+	background:black;
 	display:flex;
 	align-items: center;
 
@@ -59,7 +78,7 @@ body {
 	width:100vw;
 	height:60vh;
 	position:absolute;
-	background:red;
+	background:black;
 	display:flex;
 	align-items: center;
 
@@ -70,7 +89,7 @@ body {
 	width:100vw;
 	height:60vh;
 	position:absolute;
-	background:red;
+	background:black;
 	display:flex;
 	align-items: center;
 
@@ -81,7 +100,7 @@ body {
 	width:100vw;
 	height:60vh;
 	position:absolute;
-	background:red;
+	background:black;
 	display:flex;
 	align-items: center;
 
@@ -149,21 +168,22 @@ body {
 	height:60vh;
 	right:0;
 	position:absolute;
-	display:flex;
+	display:block;
 	background:black;
 	align-items:center;
 }
 
 
 .right1 > h2 {
+	margin-top:2em;
 	margin-left:-2em;
 	margin-bottom:3em;
 	position:relative;
 }
 
 .right1 > p{
-	margin-top:5em;
-	margin-left:-15em;
+	margin-top:-8em;
+	margin-left:2em;
 	margin-right:15em;
 }
 
@@ -189,9 +209,8 @@ body {
 }
 
 .left2 > h2 {
-	margin-left:8em;
+	margin-left:5em;
 	margin-bottom:3em;
-	position:relative;
 }
 
 .left2 > p {
@@ -229,10 +248,9 @@ body {
 }
 
 .right3 > p{
-	width:70%;
-	margin-top:4em;
-	margin-left:-15em;
-	margin-right:15em;
+	margin-top:10em;
+	margin-left:-20em;
+	margin-right:5em;
 }
 
 .left4{
@@ -263,9 +281,8 @@ body {
 }
 
 .left4 > p {
-	width:70%;
 	margin-top:12.5em;
-	margin-left: -65em;
+	margin-left: -35em;
 	margin-right:2em;
 }
 
@@ -289,7 +306,7 @@ h1{
 }
 
 h2{
-	font-size:5em;
+	font-size:3em;
 	display:block;
 	color:white;
 }
@@ -327,3 +344,18 @@ h3 {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+h4{
+	margin-left:4em;
+	color:white;
+	font-size:1em;
+	display:inline-block;
+
+}
+
+h5{
+	color:white;
+	font-size:1em;
+	display:inline-block;
+}
+

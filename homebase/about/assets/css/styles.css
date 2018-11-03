@@ -1,0 +1,50 @@
+
+
+body {
+	background:black;
+	font-family: helvetica-bold;
+	font-weight: 1;
+	margin:none;
+}
+
+
+
+.nav{
+	width:100vw;
+	height:10vh;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+}
+
+.header{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h4{
+	margin-left:4em;
+	color:white;
+	font-size:1em;
+	display:inline-block;
+
+}
+
+h5{
+	color:white;
+	font-size:1em;
+	display:inline-block;
+}
+
+p{
+	top:4em;
+	width:75%;
+	display: block;
+	font-size:1.5em;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
