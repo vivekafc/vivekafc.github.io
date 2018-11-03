@@ -5,6 +5,7 @@ body {
 	font-family: helvetica;
 	font-weight: 1;
 	margin:none;
+	color:white;
 }
 
 
@@ -136,9 +137,13 @@ body {
 	height:100vh;
 	left:0;
 	position:absolute;
-	background:gray;
+	background:white;
 	display:flex;
 	align-items:center;
+}
+
+.left > h1 {
+	color:black;
 }
 
 .right{
@@ -175,14 +180,13 @@ body {
 
 
 .right1 > h2 {
-	margin-top:2em;
+	margin-top:1em;
 	margin-left:-2em;
-	margin-bottom:3em;
+	margin-bottom:1em;
 	position:relative;
 }
 
 .right1 > p{
-	margin-top:-8em;
 	margin-left:2em;
 	margin-right:15em;
 }
@@ -209,15 +213,12 @@ body {
 }
 
 .left2 > h2 {
-	margin-left:5em;
-	margin-bottom:3em;
+	margin-left:2em;
+	margin-bottom:4em;
 }
 
 .left2 > p {
-	width:70%;
-	margin-top:12.5em;
-	margin-left: -65em;
-	margin-right:2em;
+	margin-top:10em;
 }
 
 .left3{
@@ -243,12 +244,12 @@ body {
 
 .right3 > h2 {
 	margin-left:-1em;
-	margin-bottom:5em;
+	margin-bottom:7em;
 	position:relative;
 }
 
 .right3 > p{
-	margin-top:10em;
+	margin-top:8em;
 	margin-left:-20em;
 	margin-right:5em;
 }
@@ -306,7 +307,7 @@ h1{
 }
 
 h2{
-	font-size:3em;
+	font-size:2.5em;
 	display:block;
 	color:white;
 }
@@ -359,3 +360,6 @@ h5{
 	display:inline-block;
 }
 
+h6{
+	font-size:0.4em;
+}
