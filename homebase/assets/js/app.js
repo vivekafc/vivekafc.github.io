@@ -1,13 +1,4 @@
-$(window).load(function(){ // This runs when the window has loaded
-var img = $("<img />").attr('src', 'YourImagePath/img.jpg').load(function() { 
-            $("#a1").append(img); 
-// When the image has loaded, stick it in a div
-    });
 
-var img2 = $("<img />").attr('src', 'YourImagePath/img2.jpg').load(function() {
-            $("#a2").append(img2);
-    });	
-});
 
 
 function handle(delta) {
