@@ -389,7 +389,7 @@ h6{
 	text-align:center;
 
 }
-
+/*
 body {
     opacity: 1;
     transition: 3.5s opacity;
@@ -398,3 +398,4 @@ body.fade-out {
     opacity: 0;
     transition: none;
 }
+*/
