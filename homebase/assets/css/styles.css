@@ -1,12 +1,12 @@
 
 
 body {
-	background:black;
-	font-family: arial;
-    font-weight: normal;
-    font-style: normal;
-	font-weight: 1;
+	background:white;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	margin:none;
+	margin-left:0;
 	color:white;
 }
 
@@ -15,16 +15,26 @@ body {
 
 
 .wrapper{
-	display:block;
-	width:100vw;
-	height:100vh;
-	margin:0;
+	display:inline-block;
+	width:87.5vw;
+	height:90vh;
+	margin:auto;
 	overflow:none;
 	background:url(../img/nyc.png) no-repeat;
-	background-color:black;
+	background-color:white;
 	background-size:cover;
 	position:absolute;
 	color:white;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about{
@@ -32,16 +42,20 @@ body {
 	width:100vw;
 	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
+.about > h1{
+	color:black;
+}
+
 .nav{
 	width:100vw;
 	height:10vh;
-	background:black;
+	background:white;
 	position:fixed;
 	top:0;
 	left:0;
@@ -51,7 +65,7 @@ body {
 
 .header{
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:4.7em;
 }
 
 .divide{
@@ -59,62 +73,90 @@ body {
 	width:100vw;
 	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
-.acc{
+.intro{
 	margin-top:300vh;
 	width:100vw;
-	height:60vh;
+	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
+	display:block;
+
+}
+
+.intro > h1 {
+	top:1em;
+	width:auto;
+	margin:auto;
+	left:4.5em;
+	margin-right:5em;
+	position: absolute;
+}
+
+.intro > p {
+	width:auto;
+	margin:auto;
+	margin-top:4em;
+	left:8.7em;
+	right:5em;
+	position:absolute;
+}
+
+.acc{
+	margin-top:400vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
 .sol{
-	margin-top:360vh;
+	margin-top:500vh;
 	width:100vw;
-	height:60vh;
+	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
 .cfo{
-	margin-top:420vh;
+	margin-top:600vh;
 	width:100vw;
-	height:60vh;
+	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
 .cap{
-	margin-top:480vh;
+	margin-top:700vh;
 	width:100vw;
-	height:60vh;
+	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
 }
 
 .contact{
-	margin-top:540vh;
+	margin-top:800vh;
 	width:100vw;
-	height:60vh;
+	height:100vh;
 	position:absolute;
-	background:black;
+	background:white;
 	display:flex;
 	align-items: center;
 
@@ -129,7 +171,7 @@ body {
 .contact > a {
 	margin-left:auto;
 	margin-right:auto;
-	color:white;
+	color:black;
 }
 
 
@@ -170,28 +212,34 @@ body {
 
 .right > h1 {
 	margin-top:5em;
+	color:white;
 	margin-bottom: none;
 }
 
 
 .left1{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	left:0;
 	position:absolute;
 	background:url(../img/acc.png) no-repeat;
 	background-size: cover;
 	display:flex;
 	align-items:center;
+
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .right1{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	right:0;
 	position:absolute;
 	display:block;
-	background:black;
+	background:white;
 	align-items:center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -213,17 +261,17 @@ body {
 
 .left2{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	left:0;
 	position:absolute;
 	display:flex;
-	background:black;
+	background:white;
 	align-items:center;
 }
 
 .right2{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	right:0;
 	position:absolute;
 	background:url(../img/hand.png) no-repeat;
@@ -232,6 +280,10 @@ body {
 	align-items:center;
     flex-direction: column;
     flex-wrap: wrap;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left2 > h2 {
@@ -247,22 +299,26 @@ body {
 
 .left3{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	left:0;
 	position:absolute;
 	background:url(../img/cfo.png) no-repeat;
 	background-size: cover;
 	display:flex;
 	align-items:center;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .right3{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	right:0;
 	position:absolute;
 	display:flex;
-	background:black;
+	background:white;
 	align-items:center;
 }
 
@@ -280,23 +336,27 @@ body {
 
 .left4{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	left:0;
 	position:absolute;
 	display:flex;
-	background:black;
+	background:white;
 	align-items:center;
 }
 
 .right4{
 	width:50vw;
-	height:60vh;
+	height:100vh;
 	right:0;
 	position:absolute;
 	background:url(../img/capital.png) no-repeat;
 	background-size: cover;
 	display:flex;
 	align-items:center;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left4 > h2 {
@@ -315,7 +375,7 @@ p{
 	display: block;
 	font-size:1em;
 	width:90%;
-	color:white;
+	color:black;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
@@ -323,8 +383,9 @@ p{
 
 h1{
 	display: block;
-	color:white;
+	color:black;
 	width:60%;
+	font-weight: 700;
 	text-align:center;
     margin-left: auto;
     margin-right: auto; 
@@ -332,17 +393,25 @@ h1{
 
 h2{
 	font-size:2.5em;
+	font-weight: 700;
 	display:block;
-	color:white;
+	color:black;
 }
 
+
 img.logo {
-	display:block;
+	display:flex;
 	width:15%;
-	margin-top:15%;
-	margin-left:auto;
+	/*margin-left:auto;
 	margin-right:auto;
-	vertical-align: middle;
+	margin-top:20%;
+	vertical-align: middle;*/
+    position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
 }
 
 img.arrow{
@@ -354,14 +423,15 @@ img.arrow{
 }
 
 h3{
-	font-family:helvetica-bold;
 	font-size:2em;
+	font-weight: 700;
 	color:white;
 	font-weight: 2;
 	letter-spacing:2px;
 }
 
 h3 {
+	font-weight: 700;
 	margin: 0;
     position: absolute;
     top: 61%;
@@ -371,20 +441,23 @@ h3 {
 }
 
 h4{
+	font-weight: 100;
 	margin-left:4em;
-	color:white;
-	font-size:1em;
+	color:black;
+	font-size:0.8em;
 	display:inline-block;
 
 }
 
 h5{
-	color:white;
-	font-size:1em;
+	font-weight: 100;
+	color:black;
+	font-size:0.8em;
 	display:inline-block;
 }
 
 h6{
+	font-weight: 700;
 	font-size:1.5em;
 	text-align:center;
 
@@ -400,9 +473,22 @@ body.fade-out {
 }
 */
 
+.icon{
+
+	display:inline-block;
+	background:url(../img/black.svg) center no-repeat;
+	width:3vw;
+	height:5vh;
+	position:absolute;
+	left:5em;
+	top:1em;
+	transform: scale(0.65);
+
+}
+
 .dropbtn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -422,7 +508,7 @@ body.fade-out {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: white;
     color:white;
     font-family:helvetica;
     font-size:0.8em;
@@ -433,7 +519,7 @@ body.fade-out {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: white;
+    color: black;
     font-family: helvetica;
     text-align:right;
     padding: 12px 16px;
