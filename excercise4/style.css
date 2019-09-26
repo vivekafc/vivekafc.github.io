@@ -140,6 +140,7 @@ a:hover {
 h1 {
 	margin:auto;
 	font-size:0em;
+	font-weight: lighter;
 	line-height: 10px;
 	position:relative;
 	color:yellow;
@@ -150,6 +151,7 @@ h1 {
 h2 {
 	margin:auto;
 	font-size:0em;
+	font-weight: lighter;
 	line-height: 10px;
 	position:relative;
 	color:yellow;
