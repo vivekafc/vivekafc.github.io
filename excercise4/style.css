@@ -113,8 +113,8 @@ a:hover {
 
 .square:hover{
 	margin:auto;
-	width:200px;
-	height:200px;
+	width:150px;
+	height:150px;
 	background:blue;
 	color:yellow;
 	position: absolute;
