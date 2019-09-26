@@ -27,3 +27,7 @@ ul:hover {
 	color:magenta;
 	text-decoration: underline;
 }
+
+a{
+	text-decoration: none;
+}
