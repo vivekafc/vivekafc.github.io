@@ -160,7 +160,7 @@ h2 {
 .square:hover > h1{
 	margin:auto;
 	font-size:5em;
-	line-height: 200px;
+	line-height: 150px;
 	position: relative;
 	transition: 0.5s ease-in-out;
 	
