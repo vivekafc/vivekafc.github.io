@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+body {
+	background:grey;
+	width:100%;
+	height:100%;
+	color:black;
+	font-family:times;
+	font-size:1em;
+	overflow:none;
+	margin:0;
+	overflow: none;
+
+}
+
+.wrapper{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:black;
+	text-align: center;
+	margin:0;
+	overflow: none;
+}
+
+
+p{
+	margin: auto;
+	color:gold;
+	animation-name: animation-one;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	text-align:center;
+
+}
+
+@keyframes animation-one {
+	0% { color:gold; }
+	50% { color:red; }
+	100% { color:gold; }
+}
+
+
+
+.slider {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%; 
+  height: 25px; 
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+
+.slider:hover {
+  opacity: 1; 
+}
+
+
+

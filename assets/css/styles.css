@@ -3,31 +3,71 @@ body {
 	font-family: arial;
 	font-weight: lighter;
 	background:lightgrey;
+	margin:0;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background:black;
+}
+
+.pic{
+	width:30vw;
+	height:95vh;
+	background:url(../img/25.png) center no-repeat;
+	background-size:contain;
+	position:absolute;
+	right:1em;
+	top:1em;
+
 }
 
 h1 {
 	margin:auto;
 	margin-top:1em;
-	margin-left:1.2em;
-	font-size:2em;
+	margin-left:1em;
+	font-size:3em;
 	font-weight: lighter;
 }
 
+
+
 li {
 	list-style-type: none;
+	display:inline-block;
 }
 
 ul {
-	font-size:2em;
+	font-size:2.5em;
+	margin-left:0.2em;
 	list-style-type: none;
-	color:grey;
+	color:white;
 }
 
 ul:hover {
-	color:magenta;
+	color:blue;
 	text-decoration: underline;
 }
 
 a{
 	text-decoration: none;
+}
+
+h1 {
+	color:magenta;
+	mix-blend-mode: exclusion;
+	animation-name: animation-one;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+
+
+}
+
+@keyframes animation-one {
+	0% { color:magenta; }
+	25% { color:blue; }
+	50% { color:yellow; }
+	100% { color:magenta; }
 }

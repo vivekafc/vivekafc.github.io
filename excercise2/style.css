@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+body {
+	background:grey;
+	width:100%;
+	height:100%;
+	color:black;
+	font-family:arial;
+	font-size:1em;
+	overflow:none;
+	margin:0;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  background:none;
+}
+
+li {
+  float: left;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.container {
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align: center;
+	padding:10px;
+	text-align: center;
+}
+
+.picwrapper{
+	margin:0 auto;
+	width:70vw;
+	height:70vh;
+	background:none;
+	display:block;
+	border-width: 5px;
+	border-style: solid;
+	border-color: white;
+}
+
+.pic{
+	width:40%;
+	height:100%;
+	background:url(gaspar.jpg);
+	float:left;
+}
+
+.text{
+	width:60%;
+	height:100%;
+	background:none;
+	display:inline-block;
+}
+
+
+.text p {
+	color:white;
+	font-family: times;
+	font-style: italic;
+	font-size: 1.5em;
+	text-align: left;
+	padding:1em;
+	margin-top: -0.25em;
+}
