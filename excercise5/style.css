@@ -8,11 +8,15 @@ body {
 	width:100%;
 	height:100%;
 	color:black;
-	font-family:times;
+	font-family:arial;
 	font-size:1em;
 	overflow:none;
 	margin:0;
 	overflow: none;
+	text-align: center;
+	animation-name: animation-two;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 
 }
 
@@ -20,7 +24,7 @@ body {
 	width:100%;
 	height:100%;
 	position:absolute;
-	background:black;
+	background:;
 	text-align: center;
 	margin:0;
 	overflow: none;
@@ -31,9 +35,11 @@ p{
 	margin: auto;
 	color:gold;
 	animation-name: animation-one;
-	animation-duration: 4s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	text-align:center;
+	user-select: none;
+	font-weight: lighter;
 
 }
 
@@ -43,18 +49,25 @@ p{
 	100% { color:gold; }
 }
 
+@keyframes animation-two {
+	0% { background-color:gold; }
+	25% {background-color:magenta;}
+	50% { background-color:red; }
+	100% { background-color:gold; }
+}
+
 
 
 .slider {
-  -webkit-appearance: none; 
-  appearance: none;
-  width: 100%; 
-  height: 25px; 
+  width: 30%;
+  height:30%;
   background: #d3d3d3; 
   outline: none; 
+  border-radius:10%;
   opacity: 0.7; 
   -webkit-transition: .2s; 
   transition: opacity .2s;
+  margin-top: 30%;
 }
 
 

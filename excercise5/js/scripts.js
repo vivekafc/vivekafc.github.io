@@ -64,20 +64,6 @@ $('p').click(function(){
 
 $('p').html(randLetter());})
 
-$('body').click(function(){
-
-	function bgChange() { 
-    var colours = ["red", "blue", "green", "yellow"];
-    var colour = colours[Math.floor(Math.random() * colours.length)];
-    return colour
-}
-
-$('body').style.background(bgChange());
-
-
-})
-
-
 
 
 $('p').trigger("click")
