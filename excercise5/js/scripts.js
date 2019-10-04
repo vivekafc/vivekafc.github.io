@@ -13,6 +13,8 @@ document.getElementById("body").style.background = "grey";
 
 var clock = document.getElementById("name");
 
+
+
 function colourFunction() 
 {
     var r = function () { return Math.floor(Math.random()*256) };
@@ -65,6 +67,4 @@ $('p').click(function(){
 $('p').html(randLetter());})
 
 
-
-$('p').trigger("click")
 
