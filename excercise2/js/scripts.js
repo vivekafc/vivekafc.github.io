@@ -1,45 +1,25 @@
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getHours();
+var rotate=true;
 
-var d = new Date();
-document.getElementById("demo2").innerHTML = d.getMinutes();
 
-$('#square').click(function(){ 
+
+
+$('#name').click(function(){ 
+
+	if(rotate===true){
 	
-	$('#square').css('margin-left', '650px');
+	$('#name').css('-webkit-text-stroke-color', '#7731B6');
+	rotate=false;
 
-	setInterval(function(){
+	}
 
-		console.log();
+	else{
+		$("#name").css('-webkit-text-stroke-color', 'black')
+		rotate=true;
 
-		var randomNumber = Math.random() * 80 + "px";
 
-		$('#square').css('margin', randomNumber);
-
-	}, 1000)
+	}
 
 })
-
-$('.square').click(function(){ 
-	
-	$('.square').css('margin', '650px');
-
-	setInterval(function(){
-
-		console.log();
-
-		var randomNumber = Math.random() * 80 + "px";
-
-		$('.square').css('margin', randomNumber);
-
-	}, 1000)
-
-})
-
-$('#square').trigger("click")
-
-$('.square').trigger("click")
-
 
 
 
