@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+body {
+	background:#7D26CD;
+	width:100%;
+	height:100%;
+	color:#54FF9F;
+	font-family:courier;
+	overflow-y:wrap;
+	margin:0;
+
+}
+
+
+.container {
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding: 10px;
+	overflow-y:wrap;
+}
+
+p {
+	font-size:1.5vw;
+	width:80%;
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:0 auto;
+	top: 50%;
+     transform: perspective(1px) translateY(-50%);
+     overflow-y: wrap;
+}
