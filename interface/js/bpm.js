@@ -39,8 +39,6 @@ function draw(){
   text('click to play/pause', 4, 10);
 }
 
-console.log(waveform);
-console.log(waveform.length);
 
 // fade sound if mouse is over canvas
 function togglePlay() {
