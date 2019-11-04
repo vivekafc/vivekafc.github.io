@@ -17,7 +17,7 @@ function setup() {
 }
 
 
-console.log(peakDetect);
+
 
 
 function draw() {
@@ -36,6 +36,10 @@ function draw() {
 
   ellipse(width/2, height/2, ellipseWidth, ellipseWidth);
 }
+
+var bpm = peakDetect.update(fft);
+
+console.log(bpm);
 
 // toggle play/stop when canvas is clicked
 function mouseClicked() {
