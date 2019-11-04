@@ -1,5 +1,5 @@
 function preload(){
-  sound = loadSound('cowbell.mp3');
+  sound = loadSound('wind.mp3');
 }
 
 function setup(){
