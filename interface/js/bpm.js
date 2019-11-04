@@ -16,6 +16,10 @@ function setup() {
   peakDetect = new p5.PeakDetect();
 }
 
+
+console.log(peakDetect);
+
+
 function draw() {
   background(0);
   text('click to play/pause', width/2, height/2);
