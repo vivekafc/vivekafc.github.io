@@ -2,7 +2,7 @@ let cnv, soundFile, fft, peakDetect;
 let ellipseWidth = 10;
 
 function preload() {
-  soundFile = loadSound("wind.mp3");
+  soundFile = loadSound("cowbell.mp3");
 }
 
 function setup() {
