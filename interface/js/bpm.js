@@ -1,53 +1,52 @@
-let cnv, soundFile, fft, peakDetect;
-let ellipseWidth = 10;
-
-function preload() {
-  soundFile = loadSound("cowbell.mp3");
+function preload(){
+  sound = loadSound('wind.mp3');
 }
 
-function setup() {
-  background(0);
-  noStroke();
-  fill(255);
-  textAlign(CENTER);
-
-  // p5.PeakDetect requires a p5.FFT
+function setup(){
+  let cnv = createCanvas(100,100);
+  cnv.mouseClicked(togglePlay);
   fft = new p5.FFT();
-  peakDetect = new p5.PeakDetect();
+  sound.amp(0.2);
 }
 
-
-
-
-
-function draw() {
+function draw(){
   background(0);
-  text('click to play/pause', width/2, height/2);
 
-  // peakDetect accepts an fft post-analysis
-  fft.analyze();
-  peakDetect.update(fft);
-
-  if ( peakDetect.isDetected ) {
-    ellipseWidth = 50;
-  } else {
-    ellipseWidth *= 0.95;
+  let spectrum = fft.analyze();
+  noStroke();
+  fill(0,255,0); // spectrum is green
+  for (var i = 0; i< spectrum.length; i++){
+    let x = map(i, 0, spectrum.length, 0, width);
+    let h = -height + map(spectrum[i], 0, 255, height, 0);
+    rect(x, height, width / spectrum.length, h )
   }
 
-  ellipse(width/2, height/2, ellipseWidth, ellipseWidth);
+  console.log(spectrum);
+  console.log(spectrum.length);
+
+  let waveform = fft.waveform();
+  noFill();
+  beginShape();
+  stroke(255,0,0); // waveform is red
+  strokeWeight(1);
+  for (var i = 0; i< waveform.length; i++){
+    let x = map(i, 0, waveform.length, 0, width);
+    let y = map( waveform[i], -1, 1, 0, height);
+    vertex(x,y);
+  }
+  endShape();
+
+  text('click to play/pause', 4, 10);
 }
 
-let spectrum = fft.analyze();
+console.log(waveform);
+console.log(waveform.length);
 
-console.log(spectrum.length);
-
-// toggle play/stop when canvas is clicked
-function mouseClicked() {
-  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
-    if (soundFile.isPlaying() ) {
-      soundFile.stop();
-    } else {
-      soundFile.play();
-    }
+// fade sound if mouse is over canvas
+function togglePlay() {
+  if (sound.isPlaying()) {
+    sound.pause();
+  } else {
+    sound.loop();
   }
 }
