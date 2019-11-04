@@ -10,7 +10,7 @@ canvas.height = size * dpr;
 context.scale(dpr, dpr); 
 context.lineWidth = Math.floor(Math.random() * 4) + 1;
 
-var step = Math.floor(Math.random() * 10) + 1  ;
+var step = Math.floor(Math.random() * 10) + 5  ;
 var lines = [];
 
 for(var i = step; i <= size - step; i += step) {
@@ -51,13 +51,3 @@ function random_bg_color() {
 random_bg_color();}
 
 generate();
-
-function getPngChart() {
-  var element = document.createElement('a');
-  element.setAttribute('href', document.getElementById('myCanvas').toDataURL('image/png'));
-  element.setAttribute('download', 'chart.png');
-  element.style.display = 'none';
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
