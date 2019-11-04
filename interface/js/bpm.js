@@ -24,7 +24,7 @@ function draw(){
   console.log(spectrum);
   console.log(spectrum.length);
 
-  let waveform = fft.waveform();
+  var waveform = fft.waveform();
   noFill();
   beginShape();
   stroke(255,0,0); // waveform is red
