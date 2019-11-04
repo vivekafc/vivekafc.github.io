@@ -37,9 +37,9 @@ function draw() {
   ellipse(width/2, height/2, ellipseWidth, ellipseWidth);
 }
 
-var bpm = peakDetect;
+let spectrum = fft.analyze();
 
-console.log(bpm);
+console.log(spectrum.length);
 
 // toggle play/stop when canvas is clicked
 function mouseClicked() {
