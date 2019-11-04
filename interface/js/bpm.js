@@ -37,7 +37,7 @@ function draw() {
   ellipse(width/2, height/2, ellipseWidth, ellipseWidth);
 }
 
-var bpm = peakDetect.update(fft);
+var bpm = peakDetect;
 
 console.log(bpm);
 
