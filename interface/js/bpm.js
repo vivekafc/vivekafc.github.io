@@ -24,7 +24,7 @@ function draw(){
   console.log(spectrum);
   console.log(spectrum.length);
 
-  var waveform = fft.waveform();
+  let waveform = fft.waveform();
   noFill();
   beginShape();
   stroke(255,0,0); // waveform is red
@@ -39,8 +39,7 @@ function draw(){
   text('click to play/pause', 4, 10);
 }
 
-console.log(waveform);
-console.log(waveform.length);
+return waveform;
 
 
 // fade sound if mouse is over canvas
