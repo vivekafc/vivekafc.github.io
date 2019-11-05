@@ -20,10 +20,10 @@ var dpr = window.devicePixelRatio;
 canvas.width = size * dpr;
 canvas.height = size * dpr;
 context.scale(dpr, dpr); 
-/*context.lineWidth = Math.floor(Math.random() * 4) + 1;*/
-context.lineWidth = Math.random(waveform.length);
+context.lineWidth = Math.floor(Math.random() * 4) + 1;
 
-var step = Math.floor(Math.random() * waveform.length) + 5  ;
+
+var step = Math.floor(Math.random() * 10) + 5  ;
 var lines = [];
 
 for(var i = step; i <= size - step; i += step) {

@@ -13,30 +13,46 @@ function draw(){
   background(0);
 
   let spectrum = fft.analyze();
-  noStroke();
-  fill(0,255,0); // spectrum is green
-  for (var i = 0; i< spectrum.length; i++){
-    let x = map(i, 0, spectrum.length, 0, width);
-    let h = -height + map(spectrum[i], 0, 255, height, 0);
-    rect(x, height, width / spectrum.length, h )
-  }
 
 
   let waveform = fft.waveform();
-  noFill();
-  beginShape();
-  stroke(255,0,0); // waveform is red
-  strokeWeight(1);
-  for (var i = 0; i< waveform.length; i++){
-    let x = map(i, 0, waveform.length, 0, width);
-    let y = map( waveform[i], -1, 1, 0, height);
-    vertex(x,y);
+
+  context.lineWidth = waveform.length;
+
+
+var step = Math.random(waveform)  ;
+var lines = [];
+
+for(var i = step; i <= size - step; i += step) {
+    
+  var line = [];
+  for(var j = step; j <= size - step; j+= step) {
+    var random = Math.random() * 10;
+    var point = {x: j, y: i + random};
+    line.push(point);
+  } 
+  lines.push(line);
+}
+
+
+  let waveform = fft.waveform();
+
+for(var i = 0; i < waveform.length; i++) {
+
+
+  context.beginPath();
+  context.moveTo(lines[i][0].x, lines[i][0].y);
+  
+  for(var j = 0; j < lines[i].length; j++) {
+    context.lineTo(lines[i][j].x, lines[i][j].y);
   }
-  endShape();
 
-  text('click to play/pause', 4, 10);
+context.strokeStyle = Math.floor(Math.random() * 256);
+  context.stroke();
 
-  console.log(waveform);
+
+
+
 }
 
 
