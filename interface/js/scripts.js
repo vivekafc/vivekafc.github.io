@@ -5,7 +5,7 @@ function preload(){
 function setup(){
   let cnv = document.querySelector('canvas');
   cnv.mouseClicked(togglePlay);
-  fft = new p5.FFT();
+  var fft = new p5.FFT();
   sound.amp(0.2);
 }
 
