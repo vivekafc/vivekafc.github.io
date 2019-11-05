@@ -21,8 +21,6 @@ function draw(){
     rect(x, height, width / spectrum.length, h )
   }
 
-  console.log(spectrum);
-  console.log(spectrum.length);
 
   let waveform = fft.waveform();
   noFill();
@@ -39,7 +37,6 @@ function draw(){
   text('click to play/pause', 4, 10);
 
   console.log(waveform);
-  console.log(waveform.length);
 }
 
 
