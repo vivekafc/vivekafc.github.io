@@ -1,16 +1,29 @@
+function preload(){
+  sound = loadSound('wind.mp3');
+}
+
+function setup(){
+  let cnv = document.querySelector('canvas');
+  cnv.mouseClicked(togglePlay);
+  fft = new p5.FFT();
+  sound.amp(0.2);
+}
 
 
 function generate (){var canvas = document.querySelector('canvas');
 var context = canvas.getContext('2d');
+
+let waveform = fft.waveform();
 
 var size = window.innerWidth;
 var dpr = window.devicePixelRatio;
 canvas.width = size * dpr;
 canvas.height = size * dpr;
 context.scale(dpr, dpr); 
-context.lineWidth = Math.floor(Math.random() * 4) + 1;
+/*context.lineWidth = Math.floor(Math.random() * 4) + 1;*/
+context.lineWidth = Math.random(waveform.length);
 
-var step = Math.floor(Math.random() * 10) + 5  ;
+var step = Math.floor(Math.random() * waveform.length) + 5  ;
 var lines = [];
 
 for(var i = step; i <= size - step; i += step) {
