@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-a {
+/*a {
   position: relative;
   top:7.5%;
   font-size:3vw;
@@ -49,7 +49,7 @@ a:hover {
   font-weight: bold;
   cursor:none !important;
 }
-
+*/
 h1 {
   position: relative;
   font-size:3vw;
@@ -194,6 +194,18 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 2vh;
 }
 
+.wrapper2 a{
+  font-size: 2vw;
+  color: black;
+  text-decoration: underline;
+  cursor:none;
+}
+
+.wrapper2 a:hover{
+  font-weight: bold;
+}
+
+
 .container {
 	width:400px;
   height: 400px;
@@ -267,6 +279,7 @@ canvas {
      position: relative;
      margin-bottom: 10.5vh;
 }
+
 /*
 canvas:hover{
   border-width: 10px;
