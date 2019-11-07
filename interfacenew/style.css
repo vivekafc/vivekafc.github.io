@@ -198,12 +198,8 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 2vw;
   color: black;
   text-decoration: underline;
-  cursor:none;
 }
 
-.wrapper2 a:hover{
-  font-weight: bold;
-}
 
 
 .container {
