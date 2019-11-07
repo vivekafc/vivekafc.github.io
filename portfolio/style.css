@@ -47,7 +47,7 @@ h1{
 	color:red;
 	width:5vw;
 	background-color: red;
-	cursor:none;
+	cursor:none !important;
 }
 
 h1:hover{
