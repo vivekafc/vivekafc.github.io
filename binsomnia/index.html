@@ -1,0 +1,321 @@
+<html>
+<title>Insomnia - A Day in the Life</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+<link href="lib/prism.css" rel="stylesheet" />
+<script src="lib/prism.js"></script>
+
+
+<body ng-app="cyo">
+
+  <div class="wrapper1">
+
+    <div class="markupbox">
+
+      <p>
+
+        <em>A Day in the Life</em> is my attempt at an immersive experience on the web. Following the format of a Choose Your Own Adventure type game, this experience aims to convey to the user my experiences with having insomnia at the New School, and how it made one class in particular extremely tough for me, as my relationship with my teacher deteriorated.<br><br>
+
+        I have found my experience with insomnia to be really hard, as I tend to miss a lot of morning classes from the feeling of illness that came with it from a lack of sleep. Further more, due to my absences, I developed a feeling that many of my teachers didn't appreciate me as a student and this made me even more anxious, thus worsening my insomnia.
+        <br><br>
+
+
+
+        Designed and developed by Vivek Bajaj, for Immersive Storytelling, Fall 2019.
+
+      </p>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="wrapper">
+
+  <div id="cursor"></div>
+   
+    <story>
+
+        <h2>8:03 a.m., Wednesday</h2>
+
+        <page intro="">
+            <p>Your heart races in anticipation of that alarm.</p>
+            <p>You start thinking about how much you hate this class.</p>
+            <button choice alarm="">Go back to sleep for 10 minutes</button>
+            <button choice awake="">Stay awake</button>
+            <button choice close="">Shut your alarm</button>
+        </page>
+
+        <page close>
+
+          <p>You don't go to class and fail it for too many absences.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+
+        <page alarm="">
+            <p>You hear those annoying bells and chimes.</p>
+            <p>It's your phone's alarm ringing off again</p>
+            <button choice snooze="">Press the snooze button</button>
+            <button choice shut="">Shut the alarm</button>
+        </page>
+
+        <page snooze>
+
+          <p>You fail the class for getting another tardy.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page awake="">
+            <p>You get up</p>
+            <p>That feeling of anxiety sets in.</p>
+            <p>You start thinking of her face. </p>
+            <p>You ponder over whether it's worth it. </p>
+            <button choice="" out="">Get out of bed</button>
+            <button choice="" cover="">Put your covers back on</button>
+        </page>
+
+        <page shut="">
+            <p>You get up</p>
+            <p>That feeling of anxiety sets in.</p>
+            <p>You start thinking of her face. </p>
+            <p>You ponder over whether it's worth it. </p>
+            <button choice="" out="">Get out of bed</button>
+            <button choice="" cover="">Put your covers back on</button>
+        </page>
+
+        <page cover>
+
+          <p>You miss the class and fail it.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page out=""> 
+          <p>You feel the cold air bristle against you.</p>
+          <p>The hair on your limbs rises</p>
+          <button choice up="">Get up and get ready</button>
+          <button choice back="">Go back into bed</button>
+        </page>
+
+            <page back>
+
+          <p>You miss the class and fail it.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page up>
+
+          <p>You put on your clothes and brush your teeth</p>
+          <p>You look at the time on your phone</p>
+          <p>It's 8:35 a.m.</p>
+          <p>The thought of class fills you with anxiety again.</p>
+
+        <button choice door="">Head out the door</button>
+        <button choice room="">Go back in your room</button>
+
+        </page>
+
+        <page door>
+
+          <p>You head down the stairs and see the school of students</p>
+          <p>You run into somebody heading to your class</p>
+          <p>They ask you if you did the homework; you didn't.</p>
+
+          <button choice go="">Go to class anyway</button>
+          <button choice dont="">Head back to your dorm</button>
+
+        </page>
+
+        <page dont>
+
+          <p>You miss the class and fail it.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page room>
+
+          <p>You miss the class and fail it.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page go>
+
+          <p>You walk through 15th Street</p>
+          <p>The berating clouds your mind</p>
+          <p>Your heart beats unnaturally fast</p>
+
+          <button choice still="">Keep your cool and keep walking</button>
+          <button choice return="">Cave in and return</button>
+
+        </page>
+
+        <page return>
+
+          <p>Your anxiety gets the better of you. You fail the class.</p>
+          <button restart>Try again</button>
+
+        </page>
+
+        <page still>
+
+          <p>You finally make it to class, it still doesn't feel good.</p>
+
+
+
+        </page>
+
+
+
+        
+    </story>
+
+  </div>
+
+</body>
+<style>
+
+
+story {
+    display: block;
+    padding: 2rem;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+    border-top-style: solid;
+    border-top-color:white;
+    border-top-width: 2px;
+}
+
+
+small {
+    margin-top: 15px;
+}
+
+body{
+  margin:0;
+  font-family: helvetica;
+  font-size:2vw;
+  cursor:none !important;
+  background:black;
+  color:white;
+  overflow-x: hidden;
+
+}
+
+.wrapper1{
+  width:100vw;
+  height: 100vh;
+  background:;
+  justify-content: center;
+  position: absolute;
+}
+
+.markupbox {
+  margin:auto;
+  top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+  width:60vw;
+  height: 90vh;
+  top:5vh;
+  position:relative;
+  background:;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+
+}
+
+.markupbox textarea {
+  width:100%;
+  height:100%;
+  font-size:2vw;
+  border:none;
+   resize: none;
+   outline:none;
+   background:none;
+   border-style:solid;
+  border-width: 2px;
+  border-color:black;
+  cursor: none;
+
+}
+
+.wrapper{
+  width:100vw;
+  top:100vh;
+  position: absolute;
+}
+
+button {
+  border-style: solid;
+  border-color:white;
+  background:black;
+  font-size: 1.5vw;
+  font-family: helvetica;
+  padding:10px;
+  margin-right: 1vw;
+  cursor: none;
+}
+
+button:hover {
+  background:white;
+  color:black;
+}
+
+
+
+#cursor {
+  position: fixed;
+  width:80px;
+  height:80px;
+  background:url(cursor.png) ;
+  background-size:contain;
+  pointer-events: none;
+  z-index: 2;
+}
+
+h2{
+  margin-bottom: 5vh;
+}
+
+p{
+  margin-top: 2vh;
+  margin-left:1vw;
+  margin-bottom: 2vh;
+}
+
+body::-webkit-scrollbar {
+    width:20px !important;
+    height:10px !important;
+    margin-top:2% !important;
+    margin-right:2% !important;
+    position: relative !important;
+    padding:3em !important;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white !important;
+    top:20% !important;
+    right:20% !important;
+    position: relative !important;
+    padding:3em !important;
+     height:5px !important;
+}
+
+</style>
+
+</html>
