@@ -407,3 +407,16 @@ section {
 	99% { color:black; background:black; }
 	100% { color:black; background:red; }
 	}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body{
+  	font-size: 20px
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+  	font-size: 20px
+  }
+}
