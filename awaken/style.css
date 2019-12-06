@@ -274,7 +274,136 @@ section {
 	position:absolute;
 	overflow-y:wrap;
 	text-overflow: wrap;
+	background:none;
+	color:black;
+	animation-name: animation-five;
+	animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+}
+
+.container6 p{
+	width: 80vw;
+	font-size: 3vw;
+}
+
+@keyframes animation-five {
+	0% { color:black; background:red; }
+	25% { color:red; background:white; }
+	50% { color:black; background:green; }
+	75% { color:red; background:black; }
+	100% { color:black; background:red; }
+	}
+
+
+.container7 {
+	top:560vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	overflow-y:wrap;
+	text-overflow: wrap;
+	background:black;
+	color:black;
+}
+
+.container7 p{
+	width: 80vw;
+	font-size: 2vw;
+}
+
+.slider2{
+	height:5vh;
+	width:90vw;
+	border-radius: 50%;
+	background:red;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:0 auto;
+	position: absolute;
+	animation-name: animation-six;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;/*
+	transition: 4s ease-in-out;*/
+}
+
+@keyframes animation-six {
+		0% { height:5vh; }
+	25% {height:25vh;}
+	50% { height:50vh; }
+	75% { height:100vh; }
+	100% {height:5vh;}
+	}
+
+.container8 {
+	top:660vh;
+	width:100vw;
+	height:80vh;
+	position:absolute;
+	overflow-y:wrap;
+	text-overflow: wrap;
 	background:red;
 	color:black;
 }
 
+.container8 p{
+	width: 80vw;
+	font-size: 2vw;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.container9 {
+	top:740vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	overflow-y:wrap;
+	text-overflow: wrap;
+	background:white;
+	color:black;
+	animation-name: animation-seven;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+.container9 p{
+	width: 80vw;
+	font-size: 2vw;
+}
+
+
+@keyframes animation-seven {
+	0% { color:black; background:white; }
+	50% { color:red; background:black; }
+	100% { color:black; background:white; }
+	}
+
+
+.container10 {
+	top:840vh;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	overflow-y:wrap;
+	text-overflow: wrap;
+	background:red;
+	color:black;
+	animation-name: animation-eight;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.container10 p{
+	width: 100vw;
+	font-size: 10vw;
+	text-align: center;
+}
+
+@keyframes animation-eight {
+	0% { color:black; background:red; }
+	90% { color:red; background:red; }
+	99% { color:black; background:black; }
+	100% { color:black; background:red; }
+	}

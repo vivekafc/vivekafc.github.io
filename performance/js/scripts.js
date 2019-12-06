@@ -22,3 +22,5 @@ $('.moon').click(function(){
 
 
 $('.moon').trigger("click")
+
+jQuery('#rain').raindrops(); 
