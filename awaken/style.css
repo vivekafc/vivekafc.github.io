@@ -409,14 +409,14 @@ section {
 	}
 
 @media (min-width: 481px) and (max-width: 767px) {
-  body{
+  p{
   	font-size: 20px
   }
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    body{
+    p{
   	font-size: 20px
   }
 }
