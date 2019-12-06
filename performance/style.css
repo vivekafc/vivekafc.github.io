@@ -142,15 +142,17 @@ section {
 	height: 250px;
 	border-radius: 50%;
 	position:relative;
-	left:0;
+	right:0;
+	/*left:0;
 	top:0;
 	right:0;
 	bottom:0;
 	margin:0 auto;
 	top: 27.5%;
-    transform: perspective(1px) translateY(-50%) scale(1);
+    transform: perspective(1px) translateY(-50%) scale(1);*/
     display: block;
-    background:black;
+    background:red;
+	mix-blend-mode: exclusion;
 	animation-name: animation-two;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
