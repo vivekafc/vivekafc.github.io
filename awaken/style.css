@@ -412,11 +412,89 @@ section {
   p{
   	font-size: 20px
   }
+
+   .container1 p{
+  	font-size: 20px;
+  }
+   .container2 p{
+  	font-size: 20px;
+  }
+
+   .container3 p{
+  	font-size: 20px;
+  }
+
+   .container4 p{
+  	font-size: 20px;
+  }
+
+  .container5 p{
+  	font-size: 20px;
+  }
+
+  .container6 p{
+  	font-size: 20px;
+  }
+
+  .container7 p{
+  	font-size: 20px;
+  }
+
+  .container8 p{
+  	font-size: 20px;
+  }
+
+  .container9 p{
+  	font-size: 20px;
+  }
+
+  .container10 p{
+  	font-size: 20px;
+  }
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
     p{
   	font-size: 20px
+  }
+
+   .container1 p{
+  	font-size: 20px;
+  }
+   .container2 p{
+  	font-size: 20px;
+  }
+
+   .container3 p{
+  	font-size: 20px;
+  }
+
+   .container4 p{
+  	font-size: 20px;
+  }
+
+  .container5 p{
+  	font-size: 20px;
+  }
+
+  .container6 p{
+  	font-size: 20px;
+  }
+
+  .container7 p{
+  	font-size: 20px;
+  }
+
+  .container8 p{
+  	font-size: 20px;
+  }
+
+  .container9 p{
+  	font-size: 20px;
+  }
+
+  .container10 p{
+  	font-size: 20px;
   }
 }
