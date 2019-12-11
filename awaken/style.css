@@ -25,6 +25,10 @@ body::-webkit-scrollbar {
 
 }
 
+audio{
+	background:red;
+}
+
 body::-webkit-scrollbar-thumb {
   background-color: black !important;
     top:20% !important;
