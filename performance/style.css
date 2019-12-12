@@ -196,6 +196,10 @@ section {
 	color:black;
 }
 
+.container3 p .black{
+	color:black;
+}
+
 .container3 p:hover .invis{
 	color:red;
 }
