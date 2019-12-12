@@ -23,4 +23,7 @@ $('.moon').click(function(){
 
 $('.moon').trigger("click")
 
-jQuery('#rain').raindrops(); 
+var $divide = $(".divide");
+setInterval(function(){
+    $divide.toggleClass("invis");
+}, 4000);
