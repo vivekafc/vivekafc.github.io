@@ -1,0 +1,182 @@
+
+/* Created with http://boockup.marco.land */
+@-webkit-keyframes rotatingAnimationX {
+  0%{
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+@keyframes rotatingAnimationX {
+  0%{
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+@-webkit-keyframes rotatingAnimationY {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotatingAnimationY {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes rotatingAnimationZ {
+  0%{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+@keyframes rotatingAnimationZ {
+  0%{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(15, 15, 15, 1);
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: .1em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.container > div {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.boockup {
+  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.book-container {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: 10s rotatingAnimationY ease-out infinite;
+  animation: 10s rotatingAnimationY ease-out infinite;
+}
+.book-container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.book-top, .book-bottom, .book-side-right {
+  background-size: auto auto;
+  background-repeat: repeat;
+  background-position: top left;
+}
+.book-front {
+  background-image: url('../images/book-cover.jpg');
+  width: 400px;
+  height: 540px;
+  -webkit-transform: translate3d(-200px ,-270px ,29px) translate3d(0,0,0) rotateY(0deg);
+  transform: translate3d(-200px ,-270px ,29px) translate3d(0,0,0) rotateY(0deg);
+}
+.book-side-left {
+  background-image: url('../images/book-spine.jpg');
+  width: 58px;
+  height: 540px;
+  -webkit-transform: translate3d(-200px ,-270px ,29px) translate3d(-29px, 0, -29px) rotateY(-90deg);
+  transform: translate3d(-200px ,-270px ,29px) translate3d(-29px, 0, -29px) rotateY(-90deg);
+}
+.book-side-right {
+  background-image: url('../images/book-side.jpg');
+  width: 58px;
+  height: 540px;
+  -webkit-transform: translate3d(-200px ,-270px ,29px) translate3d(371px, 0px,-29px) rotateY(90deg);
+  transform: translate3d(-200px ,-270px ,29px) translate3d(371px, 0px,-29px) rotateY(90deg);
+}
+.book-top {
+  background-image: url('../images/book-top.jpg');
+  background-position: bottom right;
+  width: 400px;
+  height: 58px;
+  -webkit-transform: translate3d(-200px, -270px ,29px) translate3d(0px, -29px, -29px) rotateX(90deg);
+  transform: translate3d(-200px, -270px ,29px) translate3d(0px, -29px, -29px) rotateX(90deg);
+}
+.book-bottom {
+  background-image: url('../images/book-top.jpg');
+  width: 400px;
+  height: 58px;
+  -webkit-transform: translate3d(-200px ,-270px ,29px) translate3d(0px, 511px, -29px) rotateX(-90deg);
+  transform: translate3d(-200px ,-270px ,29px) translate3d(0px, 511px, -29px) rotateX(-90deg);
+}
+.book-back {
+  background-image: url('../images/book-back.jpg');
+  width: 400px;
+  height: 540px;
+  -webkit-transform: translate3d(-200px ,-270px ,29px) translate3d(0,0, -58px) rotateY(180deg);
+  transform: translate3d(-200px ,-270px ,29px) translate3d(0,0, -58px) rotateY(180deg);
+}
+#credit {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: .3rem 1rem;
+  width: 21rem;
+  height: 20px;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+#credit:hover {
+  background-color: #d8d8d8;
+}
+      
